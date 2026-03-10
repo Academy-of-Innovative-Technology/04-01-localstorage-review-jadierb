@@ -1,9 +1,12 @@
-var key = "";
+var key = "userData";
 
 
 // SAVE
 document.querySelector(".save").onclick = function() {
 
+    const saveKey = document.querySelector("#saveKey").value;
+    const saveValue = document.querySelector("#saveValue").value;
+    localStorage.setItem(saveKey, saveValue);
 };
 
 
