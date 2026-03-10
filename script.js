@@ -6,8 +6,13 @@ document.querySelector(".save").onclick = function() {
 
     const saveKey = document.querySelector("#saveKey").value;
     const saveValue = document.querySelector("#saveValue").value;
-    localStorage.setItem(saveKey, saveValue);
-};
+
+    if (saveKey && saveValue) {
+        localStorage.setItem(saveKey, saveValue);
+        
+    }
+
+    
 
 
 // LOAD
