@@ -28,7 +28,16 @@ document.querySelector(".load").onclick = function() {
 const loadKey = document.querySelector("#loadkey").value;
 
 if (loadKey) {}
+const loadedValue = localStorage.getItem(loadKey);
+
+if (loadedValue !== null) {
+    document.querySelector("#loadValue").value = loadedvalues;
+} else {
+    alert("Please enter a key name.");
+
+}
 };
+
 
 // LOAD
 document.querySelector(".update").onclick = function() {
